@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+  <div class="container" id="quizContainer">
+
+    <h1>QUIZ GAME</h1>
+
+    <div class="info">
+      <p>
+        Question
+        <span id="currentQuestion">1</span>
+        of
+        <span id="totalQuestion">9</span>
+      </p>
+
+      <p>
+        Time Left:
+        <span id="time">60</span> seconds
+      </p>
+    </div>
+
+    <div class="question-box">
+      <h2 id="question">Question Goes Here</h2>
+    </div>
+
+    <div class="answers">
+      <button class="answerBtn"></button>
+      <button class="answerBtn"></button>
+      <button class="answerBtn"></button>
+      <button class="answerBtn"></button>
+    </div>
+
+    <button id="nextBtn">Next Question</button>
+
+    <div class="score">
+      Score: <span id="score">0</span>
+    </div>
+
+  </div>
+
+  <div class="result-page" id="resultPage">
+
+    <h1>Quiz Completed!</h1>
+
+    <h2 id="finalScore"></h2>
+
+    <p id="message"></p>
+
+    <button id="restartBtn">Restart Quiz</button>
+
+  </div>
+
+  <script src="quiz.js"></script>
+
+</body>
+</html>
